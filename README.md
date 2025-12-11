@@ -24,7 +24,7 @@ An artifact-driven development workflow inspired by Google Antigravity. Adds a `
 /plugin install artifact-workflow@alteredcraft-plugins
 ```
 
-Restart claude
+**❗ Restart claude**
 ```bash
 /artifact-workflow:build --help
 ```
