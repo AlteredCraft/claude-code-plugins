@@ -18,7 +18,7 @@ For more details, see the [Claude Code Plugins documentation](https://code.claud
 
 ### [artifact-workflow](./plugins/artifact-workflow/)
 
-An artifact-driven development workflow inspired by Google Antigravity. Adds a `/build` command that guides you through interrogation, planning, and execution phases with persistent artifacts for task lists, implementation plans, and walkthroughs.
+An artifact-driven development workflow inspired by Google Antigravity. Adds a `/artifact-workflow:build` command that guides you through interrogation, planning, and execution phases with persistent artifacts for task lists, implementation plans, and walkthroughs.
 
 ```bash
 /plugin install artifact-workflow@alteredcraft-plugins
@@ -26,7 +26,7 @@ An artifact-driven development workflow inspired by Google Antigravity. Adds a `
 
 Restart claude
 ```bash
-/build --help
+/artifact-workflow:build --help
 ```
 
 ## License

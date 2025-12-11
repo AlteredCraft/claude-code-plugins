@@ -4,7 +4,7 @@ An artifact-driven development workflow for Claude Code, inspired by Google Anti
 
 ## What It Does
 
-This plugin adds a `/build` command that guides you through a structured development workflow:
+This plugin adds a `/artifact-workflow:build` command that guides you through a structured development workflow:
 
 1. **Interrogation** — Claude asks clarifying questions until it has enough context
 2. **Task List** — Creates `todo.md` breaking down the work into phases
@@ -54,18 +54,18 @@ For more details on plugin installation and troubleshooting, see the [Claude Cod
 ### Start a new build
 
 ```bash
-/build
+/artifact-workflow:build
 ```
 
 Or with an initial description:
 
 ```bash
-/build Add user authentication with OAuth support
+/artifact-workflow:build Add user authentication with OAuth support
 ```
 
 ### Resume an existing build
 
-If you have existing builds, `/build` will detect them and ask if you want to continue one or start fresh:
+If you have existing builds, `/artifact-workflow:build` will detect them and ask if you want to continue one or start fresh:
 
 ```
 I found these existing builds:
