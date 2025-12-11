@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "A collection of Claude Code plugins for artifact-driven development workflows",
-    "version": "1.0.1"
+    "version": "1.0.0"
   },
   "plugins": [
     {

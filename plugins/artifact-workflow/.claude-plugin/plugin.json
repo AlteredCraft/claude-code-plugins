@@ -1,6 +1,6 @@
 {
   "name": "artifact-workflow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Artifact-driven development workflow inspired by Google Antigravity. Produces task lists, implementation plans, and walkthroughs to keep you engaged during AI-assisted development.",
   "author": {
     "name": "AlteredCraft"
