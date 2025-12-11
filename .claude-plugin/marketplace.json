@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "artifact-workflow",
-      "source": "./",
+      "source": "./plugins/artifact-workflow",
       "description": "Artifact-driven development workflow inspired by Google Antigravity. Produces task lists, implementation plans, and walkthroughs to keep you engaged during AI-assisted development."
     }
   ]
