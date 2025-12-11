@@ -28,7 +28,7 @@ Coding agents are capable, but disengagement leads to drift. Without checkpoints
 
 ```bash
 # Add the marketplace
-/plugin marketplace add alteredcraft/artifact-workflow
+/plugin marketplace add AlteredCraft/claude-code-plugins
 
 # Install the plugin
 /plugin install artifact-workflow@alteredcraft-plugins
@@ -39,8 +39,8 @@ Coding agents are capable, but disengagement leads to drift. Without checkpoints
 Clone this repository and add it as a local marketplace:
 
 ```bash
-git clone https://github.com/alteredcraft/artifact-workflow.git
-cd artifact-workflow
+git clone https://github.com/AlteredCraft/claude-code-plugins.git
+cd claude-code-plugins
 
 # In Claude Code:
 /plugin marketplace add ./
