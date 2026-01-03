@@ -12,6 +12,11 @@
       "name": "artifact-workflow",
       "source": "./plugins/artifact-workflow",
       "description": "Artifact-driven development workflow inspired by Google Antigravity. Produces task lists, implementation plans, and walkthroughs to keep you engaged during AI-assisted development."
+    },
+    {
+      "name": "dev-consultant",
+      "source": "./plugins/dev-consultant",
+      "description": "Dev consultant plugin for AI-assisted development workflows. Ensure the agent understands the scope and context of your development project."
     }
   ]
 }
