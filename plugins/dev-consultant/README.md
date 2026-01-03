@@ -65,6 +65,33 @@ Or with an initial idea:
 3. You approve or refine each section before moving on
 4. Final output is a comprehensive design specification
 
+## Sample interaction
+
+```
+  > /project-brainstorm I would like to create a todo app to track my personal tasks
+
+
+  <thinking ...>
+
+
+  This is more valuable than jumping to platform or features because the answer will inform all subsequent questions.
+
+  Given that you already use Todoist (as noted in your PKM setup), I'm curious about the motivation behind building a custom solution.
+  This will significantly shape the entire design direction.
+
+  Question: What's driving you to build your own todo app rather than continuing with Todoist or another existing solution?
+
+  A) Specific pain points - Todoist doesn't do something you need (e.g., specific integrations, workflow, data ownership)
+  B) Learning project - You want to build something practical to learn new technologies or patterns
+  C) Simplicity - You want something lighter/simpler than full-featured tools
+  D) Customization - You want complete control to tailor it exactly to your workflow
+  E) Something else - Please describe
+
+  My suggestion: Given your background in Clean Architecture, I suspect this might be a combination of B and D
+  , a practical learning project where you can apply architectural principles while building something tailored
+  to your specific workflow. But I'd like to confirm what's most important to you.
+```
+
 ## License
 
 MIT
