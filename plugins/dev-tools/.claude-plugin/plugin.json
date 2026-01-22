@@ -1,7 +1,7 @@
 {
   "name": "ac-dev-tools",
-  "version": "1.0.0",
-  "description": "Developer tools plugin with skills for journaling and productivity.",
+  "version": "1.1.0",
+  "description": "Developer tools plugin with skills for journaling, productivity, and autonomous development workflows.",
   "author": {
     "name": "AlteredCraft"
   },
@@ -11,6 +11,9 @@
     "journaling",
     "productivity",
     "reflection",
-    "documentation"
+    "documentation",
+    "autonomous",
+    "workflow",
+    "ralph-method"
   ]
 }

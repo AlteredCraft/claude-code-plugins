@@ -1,5 +1,7 @@
 # AlteredCraft Plugin Marketplace
 
+IMPORTANT: Prior to any implementation, always review the Claude Marketplace Refernce: https://code.claude.com/docs/en/plugin-marketplaces.md
+
 ## Naming Convention
 
 All plugins in this marketplace use the `ac-` prefix to avoid namespace collisions with other marketplaces:

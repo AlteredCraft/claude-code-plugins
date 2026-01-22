@@ -1,6 +1,6 @@
 # Dev Tools Plugin
 
-Developer tools plugin with skills for journaling and productivity.
+Developer tools plugin with skills for journaling, productivity, and autonomous development workflows.
 
 ## Installation
 
@@ -59,6 +59,51 @@ You had a focused day on the Claude Explorer API. The highlight was implementing
 
 *Also accomplished: Fixed a null pointer in the todos parser*
 ```
+
+### ralph-method
+
+Sets up autonomous coding tasks using the Ralph Wiggum methodology — structured requirements gathering (Phase 1) and implementation planning (Phase 2), then hands off to a building loop.
+
+**Usage:**
+
+```
+Skill(ac-dev-tools:ralph-method) [task-name-and-description]
+```
+
+When triggered, the skill will:
+
+1. Check if you're on `main` — offer to create a feature branch
+2. Interview you about Jobs to Be Done
+3. Decompose into topics (one-sentence test)
+4. Generate specs in `specs/[task-name]/`
+5. Create detailed implementation plan
+6. Deploy `BUILD_PROMPT.md` and `ralph.sh` to project root
+7. Hand off with instructions to run Phase 3
+
+**Output Structure:**
+
+```
+your-project/
+├── BUILD_PROMPT.md              # Instructions for each loop iteration
+├── ralph.sh                     # Loop runner script
+└── specs/
+    └── [task-name]/             # Namespaced task specs
+        ├── PRD.md               # Product requirements with checkboxes
+        ├── IMPLEMENTATION_PLAN.md
+        ├── BACKPRESSURE.md      # Feedback loops (tests, lint, build)
+        ├── AGENTS.md            # Task-specific learnings
+        └── 01-topic.md          # Topic specifications
+```
+
+**Running Phase 3:**
+
+```bash
+./ralph.sh                      # Lists tasks, prompts for selection
+./ralph.sh [task-name]          # Run specific task directly
+./ralph.sh [task-name] 20       # With custom max iterations
+```
+
+See `skills/ralph-method/README.md` for detailed documentation.
 
 ## License
 
