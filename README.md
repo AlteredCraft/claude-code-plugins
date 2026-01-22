@@ -53,17 +53,25 @@ A structured product consultation workflow that helps refine project ideas into 
 
 ### [ac-dev-tools](./plugins/dev-tools/)
 
-Developer tools with skills for journaling and productivity. Includes a `journal` skill that synthesizes Claude Code activity data into meaningful journal entries.
+Developer tools with skills for journaling, productivity, and autonomous development workflows.
 
 ```bash
 /plugin install ac-dev-tools@alteredcraft-plugins
 ```
 
 **❗ Restart claude**
-```
-I want to journal the work I did today
-```
-Claude should invoke the journal Skill, but as with all skills you may need to give a nudge to Claude Code: _Use the dev journal skill to journal the work I did today_
+
+**Skills:**
+
+- **journal** - Synthesizes Claude Code activity data into meaningful journal entries
+  ```
+  I want to journal the work I did today
+  ```
+
+- **ralph-method** - Sets up autonomous coding tasks using the Ralph Wiggum methodology (requirements interview + implementation planning), then hands off to a building loop
+  ```
+  Skill(ac-dev-tools:ralph-method) add-user-authentication
+  ```
 
 ## License
 
