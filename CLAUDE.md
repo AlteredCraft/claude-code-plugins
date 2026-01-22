@@ -31,3 +31,16 @@ plugins/
 ```
 
 Note: Directory names don't need the prefix—only the `name` field in `plugin.json` and `marketplace.json` entries.
+
+## Before Pushing to Main
+
+Before merging or pushing changes to `main`, ensure:
+
+1. **Update plugin version** in `.claude-plugin/plugin.json`
+   - Patch (x.x.1): Bug fixes
+   - Minor (x.1.0): New features, backwards compatible
+   - Major (1.0.0): Breaking changes
+
+2. **Update CHANGELOG.txt** at project root
+   - Add entry with `[plugin-name vX.Y.Z] - YYYY-MM-DD`
+   - Group changes under Added/Changed/Fixed/Removed

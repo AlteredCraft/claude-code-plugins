@@ -41,7 +41,7 @@ This ensures the building loop commits don't go directly to main.
 
 **This skill does NOT:**
 - Write implementation code
-- Run the building loop (that's `./ralph.sh`)
+- Run the building loop (that's `./ralph.sh` or `./ralph-one.sh`)
 
 ## Core Principle
 
@@ -277,7 +277,8 @@ Task 4 ←→ Task 5 (can parallelize)
 Check if these files exist in project root. If not, create them by reading from `~/.claude/skills/ralph-method/resources/`:
 
 - **BUILD_PROMPT.md** - Building loop instructions
-- **ralph.sh** - Loop runner script (lists specs/ and prompts for selection)
+- **ralph.sh** - Loop runner script for AFK autonomous execution
+- **ralph-one.sh** - Single-task runner for HITL observation
 
 ---
 
@@ -299,7 +300,8 @@ When complete, you will have created:
 ```
 project-root/
 ├── BUILD_PROMPT.md              # Building loop instructions
-├── ralph.sh                     # Loop runner (prompts for spec selection)
+├── ralph.sh                     # Loop runner for AFK execution
+├── ralph-one.sh                 # Single-task runner for HITL observation
 └── specs/
     └── [task-name]/             # Namespaced for this task
         ├── PRD.md
@@ -325,15 +327,16 @@ Specs created in: specs/[task-name]/
 
 To run the building loop (Phase 3):
 
-    ./ralph.sh
+    ./ralph-one.sh       # One task at a time (watch the output)
+    ./ralph.sh           # Full loop until done (go AFK)
 
-The script will list available tasks in specs/ and let you choose.
+Both scripts list available projects in specs/ and let you choose.
 
 ⚠️  Recommendations:
     • Run in sandboxed environment (Docker recommended)
-    • Start with default 15 iterations
+    • Start with ralph-one.sh to observe agent behavior
+    • Switch to ralph.sh once confident in the pattern
     • Monitor for "STUCK:" markers in output
-    • "Sit on the loop, not in it" - observe but don't intervene unless needed
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```

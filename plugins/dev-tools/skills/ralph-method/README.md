@@ -44,6 +44,11 @@ The skill will:
 
 Then run Phase 3:
 ```bash
+# One task at a time (HITL - watch the output)
+./ralph-one.sh                      # Lists tasks, prompts for selection
+./ralph-one.sh receipt-upload-ui    # Run specific task directly
+
+# Full loop (AFK - autonomous until done)
 ./ralph.sh                      # Lists tasks, prompts for selection
 ./ralph.sh receipt-upload-ui    # Run specific task directly
 ./ralph.sh receipt-upload-ui 20 # With custom max iterations
@@ -56,7 +61,8 @@ After running the skill:
 ```
 your-project/
 ├── BUILD_PROMPT.md              # Instructions for each loop iteration
-├── ralph.sh                     # Loop runner script
+├── ralph.sh                     # Loop runner script (AFK mode)
+├── ralph-one.sh                 # Single-task runner (HITL mode)
 └── specs/
     └── receipt-upload-ui/       # Namespaced task specs
         ├── PRD.md               # Product requirements with checkboxes
@@ -100,6 +106,31 @@ The skill checks if you're on `main` or `master` before starting. If so, it offe
 - [AI Hero's practical guide](https://www.aihero.dev/tips-for-ai-coding-with-ralph-wiggum) - 11 tips for effective Ralph usage
 - [Anthropic's harness guidance](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) - Aligned patterns
 
+## Execution Modes
+
+### ralph-one.sh (HITL Mode)
+Run a single task with visible output. Best for:
+- Learning the methodology
+- Debugging failing tasks
+- Watching agent behavior in real-time
+- Tasks requiring frequent human judgment
+
+```bash
+./ralph-one.sh task-name    # Execute next unchecked task, then exit
+```
+
+Output streams directly to terminal. Run again to continue to the next task.
+
+### ralph.sh (AFK Mode)
+Run the full loop autonomously until completion. Best for:
+- Well-tested spec patterns
+- Tasks with strong backpressure (tests, lint)
+- Going AFK while work progresses
+
+```bash
+./ralph.sh task-name 20     # Run up to 20 iterations
+```
+
 ## Loop Behavior
 
 The `ralph.sh` script includes several safety features:
@@ -130,5 +161,6 @@ The building loop requires `--dangerously-skip-permissions` for autonomous opera
 ├── SKILL.md            # Skill instructions (Phases 1 + 2)
 └── resources/
     ├── BUILD_PROMPT.md # Deployed to project for Phase 3
-    └── ralph.sh        # Deployed to project for Phase 3
+    ├── ralph.sh        # Loop runner for AFK execution
+    └── ralph-one.sh    # Single-task runner for HITL observation
 ```

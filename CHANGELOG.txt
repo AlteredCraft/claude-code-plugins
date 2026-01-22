@@ -1,0 +1,28 @@
+AlteredCraft Plugin Marketplace Changelog
+=========================================
+
+## [ac-dev-tools v1.2.0] - 2026-01-22
+
+### Added
+- ralph-one.sh: Single-task runner for HITL observation
+  - Executes one task from a spec folder with visible stdout
+  - Streams output directly to terminal (no capture)
+  - Same task selection as ralph.sh (interactive menu or direct arg)
+
+### Changed
+- Updated README.md with Execution Modes section (HITL vs AFK)
+- Updated SKILL.md handoff to recommend starting with ralph-one.sh
+
+## [ac-dev-tools v1.1.0] - 2026-01-21
+
+### Added
+- ralph-method skill for autonomous development workflows
+  - Phase 1: Requirements interview with JTBD decomposition
+  - Phase 2: Implementation planning with ordered tasks
+  - Phase 3: Building loop via ralph.sh
+
+## [ac-dev-tools v1.0.0] - 2026-01-20
+
+### Added
+- Initial release with journal skill
+- Development journaling for tracking progress and learnings
