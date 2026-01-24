@@ -1,0 +1,18 @@
+{
+  "name": "ac-document-gen",
+  "version": "1.0.0",
+  "description": "Document generation tools for creating professional presentations, reports, and other formatted documents.",
+  "author": {
+    "name": "AlteredCraft"
+  },
+  "repository": "https://github.com/AlteredCraft/claude-code-plugins",
+  "license": "MIT",
+  "keywords": [
+    "powerpoint",
+    "pptx",
+    "presentations",
+    "documents",
+    "slides",
+    "python-pptx"
+  ]
+}

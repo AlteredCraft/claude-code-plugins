@@ -1,6 +1,17 @@
 AlteredCraft Plugin Marketplace Changelog
 =========================================
 
+## [ac-document-gen v1.0.0] - 2026-01-24
+
+### Added
+- Initial release with powerpoint skill
+- Create professional PowerPoint presentations using python-pptx
+- Support for title, section, content, closing, and blank slide types
+- Visual accents: vertical bars, horizontal lines, solid backgrounds
+- Square bullet markers with custom colors
+- Template script with complete Style class for customization
+- Reference documentation for layouts and styling
+
 ## [ac-dev-tools v1.2.0] - 2026-01-22
 
 ### Added
