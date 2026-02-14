@@ -95,23 +95,6 @@ Document generation tools for creating professional presentations, QR codes, and
   ac-document-gen:qr-code
   ```
 
-### [ac-obsidian-cli](./plugins/obsidian-cli/)
-
-Obsidian CLI integration for knowledge management. Teaches Claude Code when and how to use the `obsidian` CLI (Obsidian 1.12+) for daily notes, search, tasks, tags, link graph analysis, properties, templates, and vault maintenance.
-
-```bash
-/plugin install ac-obsidian-cli@alteredcraft-plugins
-```
-
-**❗ Restart claude**
-
-**Skills:**
-
-- **obsidian-cli** - Complete command reference for the Obsidian CLI organized by KM workflow
-  ```
-  Search my vault for notes about "project alpha"
-  ```
-
 ## License
 
 MIT

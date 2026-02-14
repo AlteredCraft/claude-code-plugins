@@ -1,4 +1,4 @@
-# Obsidian CLI Plugin
+# [CURRENTLY BROKEN] Obsidian CLI Plugin
 
 Obsidian CLI integration for knowledge management. Teaches Claude Code when and how to use the `obsidian` CLI (Obsidian 1.12+) to interact with a running Obsidian vault.
 
