@@ -23,6 +23,25 @@ ac-document-gen:powerpoint
 **Example:**
 > "Create a presentation about our Q4 results with 5 slides"
 
+### qr-code
+
+Generate QR codes from URLs, text, or other data in multiple formats.
+
+**Features:**
+- SVG, PNG, EPS, and PDF output formats
+- Custom colors, scale, and border
+- Error correction levels (L/M/Q/H)
+- Micro QR Code support
+- Transparent backgrounds
+
+**Invocation:**
+```
+ac-document-gen:qr-code
+```
+
+**Example:**
+> "Generate a QR code for https://example.com as an SVG"
+
 ## Installation
 
 ### From GitHub (Recommended)
@@ -42,22 +61,15 @@ claude plugins install --local ./claude-code-plugins/plugins/document-gen
 
 ## How It Works
 
-1. **Ask** where to save the final `.pptx`
-2. **Gather** content requirements (title, sections, bullets)
-3. **Set up** a temp Python project with python-pptx
-4. **Generate** the presentation
-5. **Deliver** to specified location
-6. **Cleanup** temp files
+Each skill follows a consistent workflow:
 
-All work happens in `/tmp/claude/pptx-project/` to avoid filesystem clutter.
+1. **Ask** where to save the output file
+2. **Gather** requirements from the user
+3. **Generate** the output using Python scripts via `uv run`
+4. **Deliver** to the specified location
 
-## Design Philosophy
-
-The skill produces **bold, professional** presentations:
-- Strong, saturated colors (not pastels)
-- Sharp rectangles and clean lines
-- High contrast text
-- Generous whitespace
+- **powerpoint**: Sets up a temp project in `/tmp/claude/pptx-project/`, generates the `.pptx`, delivers it, and cleans up.
+- **qr-code**: Runs a single script with PEP 723 inline metadata — no temp project needed. Dependencies (`segno`) are resolved automatically by `uv run`.
 
 ## License
 

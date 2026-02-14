@@ -73,6 +73,28 @@ Developer tools with skills for journaling, productivity, and autonomous develop
   Skill(ac-dev-tools:ralph-method) add-user-authentication
   ```
 
+### [ac-document-gen](./plugins/document-gen/)
+
+Document generation tools for creating professional presentations, QR codes, and other formatted output.
+
+```bash
+/plugin install ac-document-gen@alteredcraft-plugins
+```
+
+**❗ Restart claude**
+
+**Skills:**
+
+- **powerpoint** - Create professional PowerPoint presentations with custom styling
+  ```
+  ac-document-gen:powerpoint
+  ```
+
+- **qr-code** - Generate QR codes (SVG/PNG/EPS/PDF) from URLs, text, or other data
+  ```
+  ac-document-gen:qr-code
+  ```
+
 ## License
 
 MIT

@@ -1,6 +1,16 @@
 AlteredCraft Plugin Marketplace Changelog
 =========================================
 
+## [ac-document-gen v1.1.0] - 2026-02-13
+
+### Added
+- qr-code skill for generating QR codes from URLs, text, or other data
+- SVG, PNG, EPS, and PDF output format support
+- Customizable colors, scale, border, and error correction levels
+- Micro QR Code support for compact data
+- Transparent background option (SVG/PNG)
+- Uses segno library via PEP 723 inline metadata (no manual install)
+
 ## [ac-document-gen v1.0.0] - 2026-01-24
 
 ### Added
