@@ -1,0 +1,19 @@
+{
+  "name": "ac-obsidian-cli",
+  "version": "1.0.0",
+  "description": "Obsidian CLI integration for knowledge management — daily notes, search, tasks, tags, links, properties, templates, and vault maintenance.",
+  "author": {
+    "name": "AlteredCraft"
+  },
+  "repository": "https://github.com/AlteredCraft/claude-code-plugins",
+  "license": "MIT",
+  "keywords": [
+    "obsidian",
+    "cli",
+    "knowledge-management",
+    "pkm",
+    "second-brain",
+    "notes",
+    "vault"
+  ]
+}

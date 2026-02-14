@@ -1,6 +1,14 @@
 AlteredCraft Plugin Marketplace Changelog
 =========================================
 
+## [ac-obsidian-cli v1.0.0] - 2026-02-13
+
+### Added
+- Initial release with obsidian-cli skill
+- KM command reference (daily notes, search, tasks, tags, links, properties, templates, files, vault maintenance, version history)
+- Decision matrix for CLI vs. native tools
+- Common workflow patterns (daily task review, orphan cleanup, link health audit, tag inventory)
+
 ## [ac-document-gen v1.1.0] - 2026-02-13
 
 ### Added

@@ -27,6 +27,11 @@
       "name": "ac-document-gen",
       "source": "./plugins/document-gen",
       "description": "Document generation tools for creating professional presentations, QR codes, and other formatted output."
+    },
+    {
+      "name": "ac-obsidian-cli",
+      "source": "./plugins/obsidian-cli",
+      "description": "Obsidian CLI integration for knowledge management"
     }
   ]
 }
