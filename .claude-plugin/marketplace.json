@@ -22,6 +22,11 @@
       "name": "ac-dev-tools",
       "source": "./plugins/dev-tools",
       "description": "Developer tools plugin with skills for journaling and productivity."
+    },
+    {
+      "name": "ac-document-gen",
+      "source": "./plugins/document-gen",
+      "description": "Document generation tools for creating professional presentations, QR codes, and other formatted output."
     }
   ]
 }
