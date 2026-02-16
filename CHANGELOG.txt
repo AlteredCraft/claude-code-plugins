@@ -1,6 +1,15 @@
 AlteredCraft Plugin Marketplace Changelog
 =========================================
 
+## [ac-document-gen v1.2.0] - 2026-02-16
+
+### Added
+- pdf-ocr skill for converting PDF files to markdown using local GLM-OCR via Ollama
+- Page-by-page OCR with automatic image resizing for optimal accuracy
+- Dependency checking with guided installation (Ollama, glm-ocr, poppler)
+- Background processing for large PDFs (>10 pages)
+- Bullet character normalization to standard markdown syntax
+
 ## [ac-obsidian-cli v1.0.0] - 2026-02-13
 
 ### Added

@@ -1,6 +1,6 @@
 {
   "name": "ac-document-gen",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Document generation tools for creating professional presentations, reports, and other formatted documents.",
   "author": {
     "name": "AlteredCraft"
@@ -16,6 +16,10 @@
     "python-pptx",
     "qr-code",
     "qr",
-    "segno"
+    "segno",
+    "pdf",
+    "ocr",
+    "glm-ocr",
+    "ollama"
   ]
 }
