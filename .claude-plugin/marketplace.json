@@ -26,7 +26,7 @@
     {
       "name": "ac-document-gen",
       "source": "./plugins/document-gen",
-      "description": "Document generation tools for creating professional presentations, QR codes, and other formatted output."
+      "description": "Document generation tools for creating professional presentations, QR codes, and PDF-to-markdown OCR."
     }
   ]
 }
