@@ -33,7 +33,6 @@ An artifact-driven development workflow inspired by Google Antigravity. Adds a `
 /plugin install ac-artifact-workflow@alteredcraft-plugins
 ```
 
-**❗ Restart claude**
 ```bash
 /ac-artifact-workflow:build --help
 ```
@@ -46,7 +45,6 @@ A structured product consultation workflow that helps refine project ideas into 
 /plugin install ac-ideation@alteredcraft-plugins
 ```
 
-**❗ Restart claude**
 ```bash
 /ac-ideation:dev-product-brainstorm <your project idea>
 ```
@@ -58,8 +56,6 @@ Developer tools with skills for journaling, productivity, and autonomous develop
 ```bash
 /plugin install ac-dev-tools@alteredcraft-plugins
 ```
-
-**❗ Restart claude**
 
 **Skills:**
 
@@ -81,8 +77,6 @@ Document generation tools for creating professional presentations, QR codes, and
 /plugin install ac-document-gen@alteredcraft-plugins
 ```
 
-**❗ Restart claude**
-
 **Skills:**
 
 - **powerpoint** - Create professional PowerPoint presentations with custom styling
@@ -93,6 +87,21 @@ Document generation tools for creating professional presentations, QR codes, and
 - **qr-code** - Generate QR codes (SVG/PNG/EPS/PDF) from URLs, text, or other data
   ```
   ac-document-gen:qr-code
+  ```
+
+### [ac-anchored-interview](./plugins/anchored-interview/)
+
+A meta-skill that scaffolds new Claude Code skills built around the Anchored Interview pattern — ground in a corpus, run a short interview sharpened by what was found, then produce a single artifact. Use it whenever you spot a workflow where the answer the agent needs is in your head, not the corpus.
+
+```bash
+/plugin install ac-anchored-interview@alteredcraft-plugins
+```
+
+**Skills:**
+
+- **anchored-interview-skill-creator** - Interviews you to produce a complete skill directory (SKILL.md + output template) that follows the ground-then-interview-then-act shape
+  ```
+  Skill(ac-anchored-interview:anchored-interview-skill-creator) a skill that drafts essays from my research notes
   ```
 
 ## License

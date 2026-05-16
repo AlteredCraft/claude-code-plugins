@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "A collection of Claude Code plugins for artifact-driven development workflows",
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   "plugins": [
     {
@@ -27,6 +27,11 @@
       "name": "ac-document-gen",
       "source": "./plugins/document-gen",
       "description": "Document generation tools for creating professional presentations, QR codes, and PDF-to-markdown OCR."
+    },
+    {
+      "name": "ac-anchored-interview",
+      "source": "./plugins/anchored-interview",
+      "description": "Meta-skill that creates new Claude Code skills following the Anchored Interview pattern — ground in a corpus, run a sharpened interview, then produce a single artifact."
     }
   ]
 }

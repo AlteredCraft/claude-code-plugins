@@ -1,6 +1,16 @@
 AlteredCraft Plugin Marketplace Changelog
 =========================================
 
+## [ac-anchored-interview v1.0.0] - 2026-05-16
+
+### Added
+- Initial release with anchored-interview-skill-creator meta-skill
+- Scaffolds new skills that follow the Anchored Interview pattern (ground in a corpus, run a sharpened interview, then produce a single artifact)
+- Bundled worked examples: code-corpus (feature-spec-creator) and docs-corpus (essay-draft-from-research)
+- Parameterized skill blueprint with slot markers and section order
+- Coverage-area presets for common artifact types (feature spec, essay, plan, ADR, meeting prep, editorial review)
+- Surfaces blockers up front: no real corpus, bundled artifacts, name collisions, edit-existing-skill misuse
+
 ## [ac-document-gen v1.2.0] - 2026-02-16
 
 ### Added
