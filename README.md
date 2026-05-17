@@ -94,14 +94,14 @@ Document generation tools for creating professional presentations, QR codes, and
 A meta-skill that scaffolds new Claude Code skills built around the Anchored Interview pattern — ground in a corpus, run a short interview sharpened by what was found, then produce a single artifact. Use it whenever you spot a workflow where the answer the agent needs is in your head, not the corpus.
 
 ```bash
-/plugin install ac-anchored-interview@alteredcraft-plugins
+/plugin install acraft@alteredcraft-plugins
 ```
 
 **Skills:**
 
 - **anchored-interview-skill-creator** - Interviews you to produce a complete skill directory (SKILL.md + output template) that follows the ground-then-interview-then-act shape
   ```
-  Skill(ac-anchored-interview:anchored-interview-skill-creator) a skill that drafts essays from my research notes
+  /acraft:anchored-interview-skill-creator a skill that drafts essays from my research notes
   ```
 
 ## License

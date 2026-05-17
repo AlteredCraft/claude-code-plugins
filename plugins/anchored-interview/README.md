@@ -20,7 +20,7 @@ The seed steers the grounding. The grounding sharpens the questions. The questio
 ## Installation
 
 ```bash
-/plugin install ac-anchored-interview@alteredcraft-plugins
+/plugin install acraft@alteredcraft-plugins
 ```
 
 ## Skills
@@ -32,7 +32,7 @@ Interviews you to produce a new skill that follows the Anchored Interview patter
 **Usage:**
 
 ```
-Skill(ac-anchored-interview:anchored-interview-skill-creator) a skill that drafts blog posts from my research notes
+/acraft:anchored-interview-skill-creator a skill that drafts blog posts from my research notes
 ```
 
 Or describe what you want in natural language:

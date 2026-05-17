@@ -29,7 +29,7 @@
       "description": "Document generation tools for creating professional presentations, QR codes, and PDF-to-markdown OCR."
     },
     {
-      "name": "ac-anchored-interview",
+      "name": "acraft",
       "source": "./plugins/anchored-interview",
       "description": "Meta-skill that creates new Claude Code skills following the Anchored Interview pattern — ground in a corpus, run a sharpened interview, then produce a single artifact."
     }
