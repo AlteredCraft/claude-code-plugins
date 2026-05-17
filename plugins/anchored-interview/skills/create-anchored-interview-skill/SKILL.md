@@ -1,5 +1,5 @@
 ---
-name: anchored-interview-skill-creator
+name: create-anchored-interview-skill
 description: Creates a new Claude Code skill that follows the Anchored Interview pattern — ground in a CORPUS, run an interview anchored by that grounding, then produce a single ARTIFACT. Use whenever the user wants to scaffold, generate, or design an interview-style skill — phrases like "make me an anchored interview skill", "create a skill that interviews me about X and produces Y", "scaffold a skill that reads my <corpus> and writes a <artifact>", "I want a skill for spec/draft/plan/findings creation via interview", or any request to build a skill that has the ground-then-ask-then-act shape. Do NOT use for: running an anchored interview on a specific task (this skill *creates* such skills, it doesn't perform them — for that, use or create the appropriate task-specific skill); editing an existing SKILL.md; one-shot transformations with no judgment calls; or skills where there is no corpus to ground in.
 argument-hint: [Brief description of the skill you want to create — e.g., "a skill that drafts blog posts from my research notes"]
 ---

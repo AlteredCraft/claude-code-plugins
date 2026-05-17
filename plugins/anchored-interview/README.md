@@ -20,19 +20,19 @@ The seed steers the grounding. The grounding sharpens the questions. The questio
 ## Installation
 
 ```bash
-/plugin install acraft@alteredcraft-plugins
+/plugin install ac-anchored-interview@alteredcraft-plugins
 ```
 
 ## Skills
 
-### anchored-interview-skill-creator
+### create-anchored-interview-skill
 
 Interviews you to produce a new skill that follows the Anchored Interview pattern. Output is a complete skill directory — `SKILL.md` plus a `references/<artifact>-template.md` — ready to drop into a project, your user-global skills, or another plugin.
 
 **Usage:**
 
 ```
-/acraft:anchored-interview-skill-creator a skill that drafts blog posts from my research notes
+/ac-anchored-interview:create-anchored-interview-skill a skill that drafts blog posts from my research notes
 ```
 
 Or describe what you want in natural language:

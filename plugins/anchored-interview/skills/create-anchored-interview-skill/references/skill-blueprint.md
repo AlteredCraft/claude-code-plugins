@@ -1,6 +1,6 @@
 # Produced-skill SKILL.md blueprint
 
-The skeleton `anchored-interview-skill-creator` writes during step 7. This blueprint carries the **slot markers** and **section order**. For the **prose voice and depth** of each section, look at the worked examples — `example-skill-code/SKILL.md` for code-corpus shape, `example-skill-docs/SKILL.md` for document-corpus shape. That's where the register lives. Don't try to invent voice from this blueprint alone; read the examples.
+The skeleton `create-anchored-interview-skill` writes during step 7. This blueprint carries the **slot markers** and **section order**. For the **prose voice and depth** of each section, look at the worked examples — `example-skill-code/SKILL.md` for code-corpus shape, `example-skill-docs/SKILL.md` for document-corpus shape. That's where the register lives. Don't try to invent voice from this blueprint alone; read the examples.
 
 ## How to fill this in
 

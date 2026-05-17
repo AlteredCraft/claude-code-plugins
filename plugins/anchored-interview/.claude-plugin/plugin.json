@@ -1,5 +1,5 @@
 {
-  "name": "acraft",
+  "name": "ac-anchored-interview",
   "version": "1.0.0",
   "description": "Creates Claude Code skills that follow the Anchored Interview pattern — ground in a corpus, run a sharpened interview, then produce a single artifact.",
   "author": {
