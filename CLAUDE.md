@@ -4,16 +4,32 @@ IMPORTANT: Prior to any implementation, always review the Claude Marketplace Ref
 
 ## Naming Convention
 
-All plugins use the `ac-` prefix to avoid namespace collisions:
+### Plugin names
+
+All plugins use the `ac-<topic>` pattern to avoid namespace collisions:
 
 | Directory | Plugin Name | Example Invocation |
 |-----------|-------------|-------------------|
 | `artifact-workflow/` | `ac-artifact-workflow` | `/ac-artifact-workflow:build` |
 | `ideation/` | `ac-ideation` | `/ac-ideation:dev-product-brainstorm` |
-| `dev-tools/` | `ac-dev-tools` | `ac-dev-tools:journal` |
-| `document-gen/` | `ac-document-gen` | `ac-document-gen:powerpoint` |
+| `dev-tools/` | `ac-dev-tools` | `/ac-dev-tools:journal` |
+| `document-gen/` | `ac-document-gen` | `/ac-document-gen:powerpoint` |
+| `anchored-interview/` | `ac-anchored-interview` | `/ac-anchored-interview:create-skill` |
 
 Directory names don't need the prefix—only the `name` field in `plugin.json`.
+
+Keep each plugin as its own namespace; don't collapse multiple plugins into a single global namespace. Per-plugin namespaces preserve install granularity and keep each plugin's topic visible in the slash command.
+
+### Skill names
+
+Skills live inside a plugin namespace, so the slash command already carries the plugin's topic. Keep skill names short and action-oriented — don't repeat the plugin's noun in the skill name.
+
+- **Verb-first.** `create-skill`, `draft-essay`, `build`, `journal`. Reads as an action.
+- **Don't repeat the plugin topic.** Inside `ac-anchored-interview`, the skill is `create-skill`, not `create-anchored-interview-skill`. The namespace already says "anchored interview."
+- **Avoid noun-first phrasings** like `skill-creator` or `essay-creator` — they read like job titles rather than actions.
+
+Good: `/ac-anchored-interview:create-skill` · `/ac-document-gen:powerpoint` · `/ac-dev-tools:journal`
+Avoid: `/ac-anchored-interview:create-anchored-interview-skill` · `/ac-anchored-interview:anchored-interview-skill-creator`
 
 ## Plugin Directory Structure
 
