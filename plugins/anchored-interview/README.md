@@ -25,14 +25,14 @@ The seed steers the grounding. The grounding sharpens the questions. The questio
 
 ## Skills
 
-### create-anchored-interview-skill
+### create-skill
 
 Interviews you to produce a new skill that follows the Anchored Interview pattern. Output is a complete skill directory — `SKILL.md` plus a `references/<artifact>-template.md` — ready to drop into a project, your user-global skills, or another plugin.
 
 **Usage:**
 
 ```
-/ac-anchored-interview:create-anchored-interview-skill a skill that drafts blog posts from my research notes
+/ac-anchored-interview:create-skill a skill that drafts blog posts from my research notes
 ```
 
 Or describe what you want in natural language:

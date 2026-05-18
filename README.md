@@ -99,9 +99,9 @@ A meta-skill that scaffolds new Claude Code skills built around the Anchored Int
 
 **Skills:**
 
-- **create-anchored-interview-skill** - Interviews you to produce a complete skill directory (SKILL.md + output template) that follows the ground-then-interview-then-act shape
+- **create-skill** - Interviews you to produce a complete skill directory (SKILL.md + output template) that follows the ground-then-interview-then-act shape
   ```
-  /ac-anchored-interview:create-anchored-interview-skill a skill that drafts essays from my research notes
+  /ac-anchored-interview:create-skill a skill that drafts essays from my research notes
   ```
 
 ## License
